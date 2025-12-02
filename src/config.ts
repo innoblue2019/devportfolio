@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
+  name: "Yaote Huang",
   title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  description: "From Taipei",
   accentColor: "#1d4ed8",
   social: {
     email: "your-email@example.com",
@@ -11,7 +11,7 @@ export const siteConfig = {
   },
   aboutMe:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+  skills: ["Javascript", ".Net Core", "BPM"],
   projects: [
     {
       name: "AI Dev Roundup Newsletter",
