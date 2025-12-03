@@ -4,18 +4,18 @@ import { siteConfig } from "../config";
 
 <div
   id="hero"
-  class="relative isolate overflow-hidden bg-white py-24 md:h-screen"
+  class="relative isolate overflow-hidden bg-[#05060a] py-24 md:h-screen text-gray-100"
   style={`--accent-color: ${siteConfig.accentColor}`}
 >
   <!-- Gradient overlay -->
   <div
     class="absolute inset-0 -z-10"
-    style={`background: radial-gradient(ellipse 800px 1200px at 0% 0%, ${siteConfig.accentColor}40 0%, ${siteConfig.accentColor}25 20%, ${siteConfig.accentColor}10 40%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0.8) 90%, white 100%)`}
+    style={`background: radial-gradient(ellipse 800px 1200px at 0% 0%, ${siteConfig.accentColor}40 0%, ${siteConfig.accentColor}20 25%, ${siteConfig.accentColor}10 45%, rgba(15, 23, 42, 0.6) 75%, #05060a 100%)`}
   >
   </div>
   <svg
     aria-hidden="true"
-    class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+    class="absolute inset-0 -z-10 size-full stroke-gray-800 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
   >
     <defs>
       <pattern
@@ -130,28 +130,77 @@ import { siteConfig } from "../config";
       stroke-width={0}></rect>
   </svg>
   <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
-    <div>
+    <div class="w-full flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div class="max-w-3xl">
       <h2
-        class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in"
+        class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-300 animate-fade-in"
       >
         Hello! 👋
       </h2>
       <h1
-        class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200"
+        class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-white animate-fade-in animation-delay-200"
       >
         I'm <span style={{ color: siteConfig.accentColor }}
           >{siteConfig.name}</span
         >
       </h1>
       <p
-        class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400"
+        class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-400 animate-fade-in animation-delay-400"
       >
         {siteConfig.title}
       </p>
+      </div>
+
+      <div class="relative hidden md:block shrink-0">
+        <div
+          class="absolute -inset-6 bg-[radial-gradient(circle_at_20%_20%,rgba(93,196,255,0.25),transparent_40%),radial-gradient(circle_at_80%_30%,rgba(120,255,214,0.2),transparent_35%),radial-gradient(circle_at_50%_80%,rgba(99,102,241,0.3),transparent_45%)] blur-3xl opacity-80"
+          aria-hidden="true"
+        ></div>
+
+        <div
+          class="relative w-64 h-64 md:w-72 md:h-72 rounded-3xl border border-white/10 bg-gradient-to-br from-[#0b1224] via-[#0a0f1c] to-[#0c111e] shadow-[0_20px_80px_rgba(0,0,0,0.55)] overflow-hidden"
+        >
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,255,214,0.2),transparent_45%),radial-gradient(circle_at_70%_70%,rgba(93,196,255,0.18),transparent_40%)]"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+          <svg
+            class="relative z-10 w-full h-full text-[var(--accent-color)]/80"
+            viewBox="0 0 320 320"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="60" y="60" width="200" height="200" rx="28" stroke="currentColor" stroke-width="8" />
+            <rect x="95" y="95" width="130" height="130" rx="18" stroke="currentColor" stroke-width="6" />
+            <path
+              d="M160 85V60M160 260v-25M85 160H60M260 160h-25M110 110l-18-18M228 228l-18-18M210 110l18-18M110 210l-18 18"
+              stroke="currentColor"
+              stroke-width="8"
+              stroke-linecap="round"
+            />
+            <circle cx="160" cy="160" r="46" stroke="currentColor" stroke-width="10" />
+            <circle cx="160" cy="160" r="12" fill="currentColor" />
+            <path
+              d="M140 160c0-11 9-20 20-20s20 9 20 20-9 20-20 20-20-9-20-20Z"
+              fill="currentColor"
+              opacity="0.15"
+            />
+            <path
+              d="M125 135c-8-12-22-22-37-14M195 115c10-14 25-20 39-8M204 212c12 10 29 10 42-2M128 222c-10 14-28 18-40 6"
+              stroke="currentColor"
+              stroke-width="6"
+              stroke-linecap="round"
+              opacity="0.5"
+            />
+          </svg>
+
+          <div class="absolute inset-6 border border-white/5 rounded-2xl opacity-60"></div>
+          <div class="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.04)_25%,transparent_25%,transparent_50%,rgba(255,255,255,0.04)_50%,rgba(255,255,255,0.04)_75%,transparent_75%,transparent)] bg-[length:20px_20px] opacity-40"></div>
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600"
+    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-300 animate-fade-in animation-delay-600"
   >
     {
       siteConfig.social?.email && (
